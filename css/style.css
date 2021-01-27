@@ -42,6 +42,7 @@ a {
 }
 
 .footer .second-container {
+    margin-top: 0;
     padding-top: 7rem;
     padding-bottom: 10px;
 }
@@ -58,7 +59,7 @@ a {
 
 .second-container {
     margin-top: 50px;
-    padding: 40px 80px;
+    padding: 5rem 7rem 0 7rem;
 }
 
 .content h1 {
@@ -149,9 +150,9 @@ a {
 }
 
 .bottom {
-    padding: 64px;
+    padding: 64px 100px;
     text-align: center;
-    top: 16rem;
+    top: 11rem;
 }
 
 .bottom .showcase-text {
