@@ -18,8 +18,6 @@ body {
     font-family: 'Poppins', sans-serif;
     background-image: url("../images/bg-desktop.svg");
     line-height: 1.6;
-    /* background-color: var(--primary-color); */
-    /* color: #fff; */
 }
 
 h1, h2 {
@@ -35,6 +33,16 @@ p {
 a {
     text-decoration: none;
     color: #333;
+}
+
+.footer {
+    background-color: var(--neutral-dark-cyan);
+    color: #fff;
+    /* z-index: 2; */
+}
+
+.footer .second-container {
+    padding-top: 7rem;
 }
 
 .main {
@@ -89,7 +97,7 @@ a {
     text-align: center;
     display: inline-block;
     padding: 10px 60px;
-    border-radius: 25px;
+    border-radius: 40px;
     background-color: #fff;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     font-weight: bold
@@ -102,11 +110,17 @@ a {
 }
 
 .card {
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     padding: 4rem;
     padding-left: 8rem;
     margin-bottom: 50px;
+}
+
+.showcase {
+    position: relative;
+    z-index: 1;
 }
 
 .showcase-text h1 {
@@ -123,5 +137,75 @@ a {
     order: 1;
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.second-container .logo {
+    align-self: start;
+    margin: 80px 0 20px 0;
+}
+
+.grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.bottom {
+    /* position: relative; */
+    text-align: center;
+    top: 14rem;
+}
+
+.bottom .showcase-text {
+    margin-bottom: 50px;
+}
+
+.btn-lg {
+    padding: 20px 100px;
+}
+
+.btn-secondary:hover {
+    background-color: hsl(322, 100%, 75%);
+}
+
+.links a {
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.links a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.links {
+    height: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 60px;
+}
+
+.socials {
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    padding-top: 10px;
+}
+
+.information .contact .info{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.information .contact .info img {
+    margin: 15px;
+}
+
+.socials a {
+    color: #fff;
+    margin-right: 20px;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+    margin: 0; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
