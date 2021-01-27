@@ -43,6 +43,7 @@ a {
 
 .footer .second-container {
     padding-top: 7rem;
+    padding-bottom: 10px;
 }
 
 .main {
@@ -52,22 +53,22 @@ a {
 }
 
 .main-container {
-    padding: 40px 70px;
+    padding: 40px 80px;
 }
 
 .second-container {
-    margin: 50px 0;
-    padding: 40px 70px;
+    margin-top: 50px;
+    padding: 40px 80px;
 }
 
 .content h1 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
 }
 
 .content p {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
     margin: 50px 0px 25px 0px;
 }
 
@@ -96,7 +97,7 @@ a {
 .btn {
     text-align: center;
     display: inline-block;
-    padding: 10px 60px;
+    padding: 15px 60px;
     border-radius: 40px;
     background-color: #fff;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
@@ -125,7 +126,7 @@ a {
 
 .showcase-text h1 {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
@@ -143,13 +144,14 @@ a {
 }
 
 .grid-4 {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 0;
 }
 
 .bottom {
-    /* position: relative; */
+    padding: 64px;
     text-align: center;
-    top: 14rem;
+    top: 16rem;
 }
 
 .bottom .showcase-text {
@@ -177,7 +179,7 @@ a {
     height: 100%;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 10px 60px;
+    padding: 10px 30px;
 }
 
 .socials {
@@ -186,6 +188,10 @@ a {
     height: 100%;
     padding-top: 10px;
 }
+
+.contact > *:first-child > p {
+    margin-left: 7px;
+}   
 
 .information .contact .info{
     justify-content: flex-start;
@@ -201,6 +207,12 @@ a {
     margin-right: 20px;
 }
 
+.copyright {
+    font-size: 16px;
+    margin-top: 50px;
+    align-self: flex-end;
+}
+
 .attribution { 
     font-size: 11px; text-align: center;
     margin: 0; 
@@ -208,4 +220,60 @@ a {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 768px) {
+    .main .navbar{
+        padding: 40px 30px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .contact {
+        margin-bottom: 40px;
+    }
+
+    .grid-4 {
+        gap: 0;
+    }
+
+    .second-container {
+        padding: 40px;
+    }
+
+    .second-container .showcase-text {
+        order: 1;
+    }
+
+    .card {
+        width: 100%;
+        padding: 40px;
+    }
+
+    .socials {
+        margin-top: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .copyright {
+        align-self: center;
+    }
+
+    .links {
+        padding: 0 15px;
+    }
+
+    .links a {
+        margin-bottom: 5px;
+    }
+
+    .contact > *:first-child {
+        text-align: left;
+    } 
 }
